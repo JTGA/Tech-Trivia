@@ -11,7 +11,7 @@
 
 ###1.  Description
 
-	'Tech Trivia' is a Javascript based trivia/quiz game in which the player will be asked various questions based on technology related subject matter.  Content will consist of coding, programming languages and technology questions.  Javascript and jQuery questions will be incorporated.  Corresponding answers will follow.  The game will serve as a fun yet educational tool for the player.
+	Tech Trivia is a Javascript based trivia/quiz game in which the player will be asked various questions based on technology related subject matter.  Content will consist of coding, programming languages and technology questions.  Javascript and jQuery questions will be incorporated.  Corresponding answers will follow.  The game will serve as a fun yet educational tool for the player.
 	
 	
 ###2.  Wireframe
