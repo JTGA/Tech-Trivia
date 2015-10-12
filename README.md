@@ -6,7 +6,7 @@
 1.  Description
 2.  Wireframe
 3.  User Stories
-4.  Minimum Viable Project (MVP)
+4.  Minimum Viable Product (MVP)
 
 
 ###1.  Description
@@ -24,7 +24,7 @@ https://github.com/JTGA/Tech-Trivia/tree/master/assets
 ###3. User Stories
 
 
-###4. Minimum Viable Project (MVP)
+###4. Minimum Viable Product (MVP)
 
 
 
