@@ -3,15 +3,24 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Tech Trivia</title>
-
-	<link rel="stylesheet" type="text/css" href="css/main.css">
-
-	<script scr= "https://code.jquery.com/jquery-2.1.4.min.js" ></script>
-	
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open Sans"/>
+	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 </head>
 <body>
-	
+	<div id='container'>
+		<div id='title'>
+			<h1>Tech Trivia</h1>
+		</div>
+		<br/>
+		<div id='quiz'></div>
+		<div class='button' id='next'><a href='#'>Next</a></div>
+		<div class='button' id='prev'><a href='#'>Prev</a></div>
+		<div class='button' id='start'><a href='#'>Start Over</a></div>
+		</div>
 
-	<script src="js/main.js"></script>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script type="text/javascript" src="questions.json"></script>
+		<script type="text/javascript" src="main.js"></script>
 </body>
 </html>
