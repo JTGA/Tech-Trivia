@@ -42,6 +42,20 @@ https://github.com/JTGA/Tech-Trivia/tree/master/assets
 - An MVP that consists of a well planned, throughout project that is well organized
 
 
+###5. Technologies
+
+Technologies used in the formation of this game include:
+
+- HTML (HyperText Markup Language)
+- CSS
+- JavaScript
+- jQuery
+
+
+
+
+
+
 
 
 
