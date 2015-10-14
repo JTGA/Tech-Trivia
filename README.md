@@ -37,7 +37,7 @@ https://github.com/JTGA/Tech-Trivia/tree/master/assets
 
 - An MVP that consists of a working game
 - An MVP that is functional, but not necessarily perfect or beautiful
-- An MVP that
+- An MVP that consists of a well planned, throughout project that is well organized
 
 
 
