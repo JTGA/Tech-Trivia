@@ -64,6 +64,17 @@ var questions = [{
     }
   });
 
+  $('#prev').on('click', function (e) {
+    e.preventDefault();
+
+    if(quiz.is(':animated')) {
+      return false;
+    }
+    choose();
+    questionCounter--;
+    displayNext();
+  });
+
 
 
 
