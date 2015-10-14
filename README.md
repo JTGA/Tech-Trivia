@@ -23,26 +23,21 @@ https://github.com/JTGA/Tech-Trivia/tree/master/assets
 
 ###3. User Stories
 
-1. As a player I want an interface that is easy to understand
-2. As a player I want a question with a corresponding set of answers
-3. As a player I want subject matter relevant to technology and coding
-4. As a player I want to have a score
-5. As a player I want a game that is fun yet educational
-6. As a player I want to be able to reflect on the information and learn from it	
-7.
-8.
-9.
-10.
-
+- As a player I want an interface that is easy to understand
+- As a player I want a question with a corresponding set of answers
+- As a player I want subject matter relevant to technology and coding
+- As a player I want to have a score
+- As a player I want a game that is fun yet educational
+- As a player I want to be able to reflect on the information and learn from it	
 
 
 
 
 ###4. Minimum Viable Product (MVP)
 
-1. An MVP that consists of a working game
-2. An MVP that is functional, but not necessarily perfect or beautiful
-3. An MVP that
+- An MVP that consists of a working game
+- An MVP that is functional, but not necessarily perfect or beautiful
+- An MVP that
 
 
 
