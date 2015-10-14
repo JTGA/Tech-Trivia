@@ -42,40 +42,47 @@ var questions = [{
     correctAnswer: 0
   }];
 
-  var questionCounter = 0;
-  var selections = [];
-  var quiz = $('#quiz');
+var questionCounter = 0;
+var selections = [];
+var score = 0;
 
-  displayNext();
+var $quiz = $('#quiz');
+var $answer1 = $('#answer1');
+var $answer2 = $('#answer2');
+var $answer3 = $('#answer3');
+var $answer4 = $('#answer4');
+var $answer5 = $('#answer5');
+var $answer6 = $('#answer6');
 
-  $('#next').on('click', function (e) {
-    e.preventDefault();
+$answer1.on('click', response);
+$answer2.on('click', response);
+$answer3.on('click', response);
+$answer4.on('click', response);
+$answer5.on('click', response);
+$answer6.on('click', response);
 
-    if(quiz.is(':animated')) {
-      return false;
-    }
-    choose();
+render();
 
-    if (isNaN(selections[questionCounter])) {
-      alert('Make a selection!');
-    } else {
-      questionCounter++;
-      display();
-    }
-  });
+function response(evt) {
+  var choice = parseInt(this.id.substr(1)) - 1;
+  console.log("Answer" + questions[questionCounter].choices[response]);
+  console.log(response == questions[questionCounter].correctAnswer ? "Correct" : "Incorrect")
 
-  $('#prev').on('click', function (e) {
-    e.preventDefault();
+  if (questionCounter < questions.length - 1) {
+    questionCounter++;
+    render();
+  } else {
 
-    if(quiz.is(':animated')) {
-      return false;
-    }
-    choose();
-    questionCounter--;
-    displayNext();
-  });
+  }
+}
+
+function render() {
+  $quiz.html(questions[questionCounter].question);
+}
 
 
+
+ 
 
 
 

@@ -1,4 +1,4 @@
-#Project #1 
+#Project #1: The Game
 
 ##Title:  Tech Trivia
 

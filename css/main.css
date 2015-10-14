@@ -1,7 +1,7 @@
 body {
 	font-family: Open Sans;
-	background: url("blue-background.jpg");
-	background-position: "";
+	background: url("tech-trivia.jpg") no-repeat center center fixed;
+	background-size: cover;
 }
 
 h1 {
