@@ -41,3 +41,40 @@ var questions = [{
     choices: ["Client Scripting", "Server Scripting"],
     correctAnswer: 0
   }];
+
+  var questionCounter = 0;
+  var selections = [];
+  var quiz = $('#quiz');
+
+  displayNext();
+
+  $('#next').on('click', function (e) {
+    e.preventDefault();
+
+    if(quiz.is(':animated')) {
+      return false;
+    }
+    choose();
+
+    if (isNaN(selections[questionCounter])) {
+      alert('Make a selection!');
+    } else {
+      questionCounter++;
+      display();
+    }
+  });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
