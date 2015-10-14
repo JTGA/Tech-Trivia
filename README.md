@@ -7,6 +7,7 @@
 2.  Wireframe
 3.  User Stories
 4.  Minimum Viable Product (MVP)
+5.  Technologies
 
 
 ###1.  Description
