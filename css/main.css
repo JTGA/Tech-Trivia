@@ -1,16 +1,18 @@
 body {
-	font-family: Open Sans;
 	background: url("tech-trivia.jpg") no-repeat center 200px fixed;
 	background-color: #00C6D4;
+	font-family: 'Ubuntu', sans-serif;	font-size: 22px;
 }
 
 h1 {
 	text-align: center;
-	font-size: 42px;
+	font-size: 44px;
 }
 
 #title {
 	text-decoration: underline;
+	font-family: 'Ubuntu', sans-serif;
+	color: #00C6D4;
 }
 
 #quiz {
@@ -73,6 +75,20 @@ button {
 
 #score {
 	text-align: right;
+	font-size: 20px;
+	font: Lucida;
+	margin-top: 10px;
 	/*padding: 20px;*/
 	/*margin: 30px 150px 0;*/
+}
+
+#player1Score {
+	text-align: right;
+	/*padding: 20px;*/
+	/*margin: 30px 150px 0;*/
+}
+
+#player2Score {
+	text-align: right;
+	
 }

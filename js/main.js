@@ -45,9 +45,12 @@ var questions = [{
 var questionCounter = 0;
 var selections = [];
 var score = 0;
+var player1score = 0;
+var player2Score = 0;
 var currentQuestion;
 
 var $quiz = $('#quiz');
+var $score = $('#score');
 var $score = $('#score');
 var $answer1 = $('#answer1');
 var $answer2 = $('#answer2');
