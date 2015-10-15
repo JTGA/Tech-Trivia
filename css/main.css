@@ -1,7 +1,7 @@
 body {
 	font-family: Open Sans;
-	background: url("tech-trivia.jpg") no-repeat center center fixed;
-	background-size: cover;
+	background: url("tech-trivia.jpg") no-repeat center 200px fixed;
+	background-color: #00C6D4;
 }
 
 h1 {
@@ -58,8 +58,6 @@ button {
 	box-shadow: 10px 10px 10px #888;
 }
 
-
-
 #prev {
 	display: none;
 }
@@ -74,8 +72,7 @@ button {
 }
 
 #score {
-	text-align: center;
-	border: solid 2px blue;
-	padding: 20px;
-	margin: 30px 150px 0;
+	text-align: right;
+	/*padding: 20px;*/
+	/*margin: 30px 150px 0;*/
 }

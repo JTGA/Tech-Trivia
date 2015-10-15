@@ -66,9 +66,7 @@ function response(evt) {
   var choice = parseInt(this.id.substr(this.id.length - 1)) - 1;
   if (choice === questions[questionCounter].correctAnswer) {
     score++;
-
   } else {
-    
     alert("Wrong Answer");
   }
 
@@ -84,14 +82,29 @@ function response(evt) {
     questionCounter++;
     render();
   } else {
-
+    // Last question:
+    $score.html(score.toString() + " OUT OF " + questions.length + " CORRECT");
+    alert("You're finished! Your score was: " + score)
+    $quiz.text("");
+    $('ul').hide();
+    $restartButton = $("<button>Restart Game</button>");
+    $restartButton.on("click", function() {
+      questionCounter = 0;
+      score = 0;
+      $('ul').show();
+      render();
+    })
+    $quiz.append($restartButton);
+    // Remove the last question
+    // Display a screen that allows them to restart.
   }
 }
 
 function render() {
   currentQuestion = questions[questionCounter];
   $quiz.html(currentQuestion.question);
-  $score.html(score.toString() + "<br>OUT OF<br>" + questions.length + "<br>CORRECT");
+  $score.html(score.toString() + " OUT OF " + questions.length + " CORRECT");
+
   for (i = 0; i < currentQuestion.choices.length; i++) {
     var currentAnswer = currentQuestion.choices[i];
     console.log(currentAnswer)
