@@ -58,11 +58,7 @@ button {
 	box-shadow: 10px 10px 10px #888;
 }
 
-ul {
-	list-style-type: none;
-	padding: 0;
-	margin: 0;
-}
+
 
 #prev {
 	display: none;
@@ -71,4 +67,15 @@ ul {
 #start {
 	display: none;
 	width: 90px;
+}
+
+.answerButton {
+	cursor: pointer;
+}
+
+#score {
+	text-align: center;
+	border: solid 2px blue;
+	padding: 20px;
+	margin: 30px 150px 0;
 }

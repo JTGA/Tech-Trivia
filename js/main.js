@@ -2,7 +2,7 @@ console.log("JAVASCRIPT Loaded!");
 
 var questions = [{
     question: "Who is JavaScript officially managed by?",
-    choices: ["Mozilla", "Microsoft", "Apple", "Sun Microsystems", "Oracle"],
+    choices: ["Mozilla", "Microsoft", "Apple", "Sun Microsystems"],
     correctAnswer: 0
   }, {
     question: "What is Error 404?",
@@ -26,7 +26,7 @@ var questions = [{
     correctAnswer: 3
   }, {
     question: "What was the name of the original Netscape Navigator?",
-    choices: ["Mozilla", "Safari", "Gecko", "Mosaic", "Web Explorer"],
+    choices: ["Mozilla", "Safari", "Mosaic", "Web Explorer"],
     correctAnswer: 0
   }, {
     question: "Which computer programming language was developed by Brendan Eich for Netscape in 1995?  Its intended purpose was to create or alter dynamic content in web browsers.",
@@ -45,28 +45,40 @@ var questions = [{
 var questionCounter = 0;
 var selections = [];
 var score = 0;
+var currentQuestion;
 
 var $quiz = $('#quiz');
+var $score = $('#score');
 var $answer1 = $('#answer1');
 var $answer2 = $('#answer2');
 var $answer3 = $('#answer3');
 var $answer4 = $('#answer4');
-var $answer5 = $('#answer5');
-var $answer6 = $('#answer6');
 
-$answer1.on('click', response);
-$answer2.on('click', response);
-$answer3.on('click', response);
-$answer4.on('click', response);
-$answer5.on('click', response);
-$answer6.on('click', response);
+$answersButtons = [$answer1, $answer2, $answer3, $answer4];
+
+
+$(".answerButton").click(response);
+
 
 render();
 
 function response(evt) {
-  var choice = parseInt(this.id.substr(1)) - 1;
-  console.log("Answer" + questions[questionCounter].choices[response]);
-  console.log(response == questions[questionCounter].correctAnswer ? "Correct" : "Incorrect")
+  var choice = parseInt(this.id.substr(this.id.length - 1)) - 1;
+  if (choice === questions[questionCounter].correctAnswer) {
+    score++;
+
+  } else {
+    
+    alert("Wrong Answer");
+  }
+
+
+  // console.log("Answer" + questions[questionCounter].choices[response]);
+  // console.log(response == questions[questionCounter].correctAnswer ? "Correct" : "Incorrect")
+  // if (currentQuestion.correctAnswer == evt.target.dataset.index) {
+  //   alert("Correct Answer");
+  // }
+
 
   if (questionCounter < questions.length - 1) {
     questionCounter++;
@@ -77,8 +89,18 @@ function response(evt) {
 }
 
 function render() {
-  $quiz.html(questions[questionCounter].question);
+  currentQuestion = questions[questionCounter];
+  $quiz.html(currentQuestion.question);
+  $score.html(score.toString() + "<br>OUT OF<br>" + questions.length + "<br>CORRECT");
+  for (i = 0; i < currentQuestion.choices.length; i++) {
+    var currentAnswer = currentQuestion.choices[i];
+    console.log(currentAnswer)
+    $answersButtons[i].html(currentAnswer);
+  }
 }
+
+
+
 
 
 
