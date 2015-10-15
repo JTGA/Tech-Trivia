@@ -40,22 +40,21 @@ var questions = [{
     question: "Is jQuery a library for client scripting or server scripting?",
     choices: ["Client Scripting", "Server Scripting"],
     correctAnswer: 0
-  }];
+  }
+];
 
 var questionCounter = 0;
-var selections = [];
-var score = 0;
-var player1score = 0;
-var player2Score = 0;
-var currentQuestion;
+var score = [0, 0];
+var turn = 0;
 
 var $quiz = $('#quiz');
-var $score = $('#score');
-var $score = $('#score');
+var $score1 = $('#player1score');
+var $score2 = $('#player2score');
 var $answer1 = $('#answer1');
 var $answer2 = $('#answer2');
 var $answer3 = $('#answer3');
 var $answer4 = $('#answer4');
+var $restartButton = $('#resetBtn');
 
 $answersButtons = [$answer1, $answer2, $answer3, $answer4];
 
@@ -68,9 +67,7 @@ render();
 function response(evt) {
   var choice = parseInt(this.id.substr(this.id.length - 1)) - 1;
   if (choice === questions[questionCounter].correctAnswer) {
-    score++;
-  } else {
-    alert("Wrong Answer");
+    score[turn]++;
   }
 
 
@@ -83,30 +80,54 @@ function response(evt) {
 
   if (questionCounter < questions.length - 1) {
     questionCounter++;
+    turn = Math.abs(turn - 1);
+    console.log(turn);
     render();
   } else {
     // Last question:
-    $score.html(score.toString() + " OUT OF " + questions.length + " CORRECT");
-    alert("You're finished! Your score was: " + score)
+    // $score.html(score.toString() + " OUT OF " + questions.length + " CORRECT");
+    var msg;
+    if (score[0] > score[1]) {
+      msg = "Congrats Player 1!";
+    } else if (score[1] > score[0]) {
+      msg = "Congrats Player 2!";
+    } else {
+      msg = "It's a Tie!";
+    }
+    alert(msg);
     $quiz.text("");
     $('ul').hide();
-    $restartButton = $("<button>Restart Game</button>");
-    $restartButton.on("click", function() {
-      questionCounter = 0;
-      score = 0;
-      $('ul').show();
-      render();
-    })
-    $quiz.append($restartButton);
+    $restartButton.show();
     // Remove the last question
     // Display a screen that allows them to restart.
   }
 }
 
+$restartButton.on("click", function() {
+  questionCounter = 0;
+  turn = 0;
+  score = [0, 0];
+  $('ul').show();
+  render();
+  $(this).hide();
+})
+
 function render() {
+  var currentQuestion;
   currentQuestion = questions[questionCounter];
   $quiz.html(currentQuestion.question);
-  $score.html(score.toString() + " OUT OF " + questions.length + " CORRECT");
+
+  // display current turn
+  if (turn === 0) {
+    $score1.addClass('currentTurn');
+    $score2.removeClass('currentTurn');
+  } else {
+    $score2.addClass('currentTurn');
+    $score1.removeClass('currentTurn');
+  }
+
+  $score1.html("Player 1<br>" + score[0].toString() + " OUT OF " + (questions.length/2) + " CORRECT");
+  $score2.html("Player 2<br>" + score[1].toString() + " OUT OF " + (questions.length/2) + " CORRECT");
 
   for (i = 0; i < currentQuestion.choices.length; i++) {
     var currentAnswer = currentQuestion.choices[i];
@@ -114,18 +135,6 @@ function render() {
     $answersButtons[i].html(currentAnswer);
   }
 }
-
-
-
-
-
-
- 
-
-
-
-
-
 
 
 
