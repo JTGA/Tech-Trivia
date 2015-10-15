@@ -88,9 +88,9 @@ function response(evt) {
     // $score.html(score.toString() + " OUT OF " + questions.length + " CORRECT");
     var msg;
     if (score[0] > score[1]) {
-      msg = "Congrats Player 1!";
+      msg = "Congratulations Player 1!";
     } else if (score[1] > score[0]) {
-      msg = "Congrats Player 2!";
+      msg = "Congratulations Player 2!";
     } else {
       msg = "It's a Tie!";
     }
