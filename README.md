@@ -33,6 +33,9 @@ https://github.com/JTGA/Tech-Trivia/tree/master/assets
 - As a player I want to be challanged on my technical knowhow and programming expertise
 - As a player I want to test my coding knowledge
 - As a player a timed game is optional
+- As a player I want subkect matter that relates to WDI
+- As a player I want a game that calculates a score and determines a winning player
+- As a player I want a game that involves two players
 
 
 
@@ -41,6 +44,8 @@ https://github.com/JTGA/Tech-Trivia/tree/master/assets
 - An MVP that consists of a working game
 - An MVP that is functional, but not necessarily perfect or beautiful
 - An MVP that consists of a well planned, thought–out project that is well organized
+- An MVP that functions as a one player game
+- An MVP that functions as a two player game
 
 
 ###5. Technologies
