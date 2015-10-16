@@ -10,6 +10,7 @@
 3.  User Stories
 4.  Minimum Viable Product (MVP)
 5.  Technologies
+6.  Get Started
 
 
 ###1.  Description
@@ -58,6 +59,12 @@ Technologies used in the formation of this game include:
 - CSS
 - JavaScript
 - jQuery
+
+
+###6. Get Started
+
+The installation insrtuctions/process is quite simple.  There is no need to download or install any application or file.  Simply launch the web app by linking to the URL provided in the Readme file or the repository.  The app is hosted online so the entire world can access it.  Have fun!
+
 
 
 
