@@ -109,7 +109,7 @@ button {
 }
 
 .currentTurn {
-	border: solid 3px red;
+	border: solid 3px #00C6D4;
 }
 
 #resetBtn {
