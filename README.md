@@ -33,7 +33,7 @@ https://github.com/JTGA/Tech-Trivia/tree/master/assets
 - As a player I want to be challanged on my technical knowhow and programming expertise
 - As a player I want to test my coding knowledge
 - As a player a timed game is optional
-- As a player I want subkect matter that relates to WDI
+- As a player I want subject matter that relates to WDI
 - As a player I want a game that calculates a score and determines a winning player
 - As a player I want a game that involves two players
 
