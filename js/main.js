@@ -40,6 +40,46 @@ var questions = [{
   question: "Is jQuery a library for client scripting or server scripting?",
   choices: ["Client Scripting", "Server Scripting"],
   correctAnswer: 0
+}, {
+  question: "Is JavaScript case sensitive?",
+  choices: ["Yes", "No"],
+  correctAnswer: 0
+}, {
+  question: "Who invented the World Wide Web in 1989",
+  choices: ["Ken Thompson", "Bill Gates", "Doug Englebart", "Tim Berners-Lee"],
+  correctAnswer: 3
+}, {
+  question: "Who was the father of Hypertext?",
+  choices: ["Larry Wall", "Linus Torvalds", "Ted Nelson", "Doug Englebart"],
+  correctAnswer: 2
+}, {
+  question: "Who is the inventor of the C++ programming language?",
+  choices: ["Phil Zimmermann", "Charles Goldfarb", "Ray Tomlinson", "Bjarne Stroustrup"],
+  correctAnswer: 3
+}, {
+  question: "In what year was DOS created?",
+  choices: ["1973", "1981", "1977", "1985"],
+  correctAnswer: 1
+}, {
+  question: "What is the correct jQuery code to set the background color of all p elements to red?",
+  choices: ['$("p").css("background-color","red”);', '$("p").layout("background-color","red”);', '$("p").manipulate("background-color","red”);', '$("p").style("background-color","red”);'], 
+  correctAnswer: 0
+}, {
+  question: "Scripting and object-oriented programming language developed by John H. Thompson for use in Adobe Director",
+  choices: ["ActionScript", "VBA", "Lingo", "Ruby"],
+  correctAnswer: 2
+}, {
+  question: "Interpreted programming language for text processing and data extraction.  It is a standard feature of most Unix-like OS.",
+  choices: ["AWK", "Ruby", "Miranda", "Python"],
+  correctAnswer: 0
+}, {
+  question: "What is the most widespread logic programming language, desgined by Alain Colmerauer in 1972?",
+  choices: ["Lingo", "Fortran", "Prolog", "Delphi"],
+  correctAnswer: 2
+}, {
+  question: "What scripting language primarily used for web development was created by Rasmus Lerdorf in 1994?",
+  choices: ["Ajax", "PHP", "JavaScript", "C++"],
+  correctAnswer: 1
 }
 ];
 
