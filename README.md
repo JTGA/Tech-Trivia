@@ -63,7 +63,7 @@ Technologies used in the formation of this game include:
 
 ###6. Get Started
 
-The installation insrtuctions/process is quite simple.  There is no need to download or install any application or file.  Simply launch the web app by linking to the URL provided in the Readme file or the repository.  The app is hosted online so the entire world can access it.  Have fun!
+The installation instructions/process is quite simple.  There is no need to download or install any application or file.  Simply launch the web app by linking to the URL provided in the Readme file or the repository.  The app is hosted online so the entire world can access it.  Have fun!
 
 
 
